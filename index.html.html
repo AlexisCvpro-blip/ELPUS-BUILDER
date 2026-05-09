@@ -17,14 +17,32 @@
 </main>
 <div id="paymentModal" class="payment-modal">
   <div class="payment-box">
-    <h2>Finaliser le téléchargement</h2>
-    <p>Pour télécharger le CV en PDF, le candidat doit d’abord effectuer le paiement sécurisé via Stripe.</p>
-    <div class="payment-price">Téléchargement du CV — 2,99€</div>
-    <div class="payment-actions">
-      <a class="btn btn-gold" href="https://buy.stripe.com/test_3cI5kF6L6byicUk94p8bS00?prefilled_promo_code=paidsuccess" target="_blank" rel="noreferrer">Payer avec Stripe</a>
-      <button class="btn btn-soft" onclick="closePaymentModal()">Annuler</button>
+    <h2>Votre CV est prêt ✨</h2>
+    <p>Vous avez terminé la création de votre CV. Effectuez le paiement sécurisé pour débloquer le téléchargement en PDF haute qualité.</p>
+    <div class="payment-price">
+      <div style="font-size:14px;font-weight:700;margin-bottom:6px;color:#92400e">Accès immédiat</div>
+      <div style="font-size:34px;font-weight:1000;letter-spacing:-.05em">2,99€</div>
+      <div style="margin-top:8px;font-size:13px;color:#9a3412">Téléchargement illimité du CV après achat</div>
     </div>
-    <div class="payment-note">Dans Stripe, configure l’URL de succès vers ton site avec <strong>?paid=success</strong> à la fin de l’URL. Après paiement validé, le PDF se téléchargera automatiquement.</div>
+    <div style="display:grid;gap:12px;margin:20px 0">
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#334155">
+        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div>
+        CV optimisé pour les candidatures modernes
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#334155">
+        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div>
+        Export PDF propre et professionnel
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#334155">
+        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e"></div>
+        Mise en page compatible ATS
+      </div>
+    </div>
+    <div class="payment-actions">
+      <a class="btn btn-gold" href="https://buy.stripe.com/test_3cI5kF6L6byicUk94p8bS00?prefilled_promo_code=paidsuccess" target="_blank" rel="noreferrer">Télécharger le CV</a>
+      <button class="btn btn-soft" onclick="closePaymentModal()">Continuer l’édition</button>
+    </div>
+    <div class="payment-note">Paiement sécurisé via Stripe • Téléchargement automatique après validation du paiement.</div>
   </div>
 </div>
 <script>
